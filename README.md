@@ -22,7 +22,17 @@ Este é o repositório para o Desafio dos Cavaleiros. Siga as instruções abaix
 
 1. Após iniciar os contêineres, você precisará importar os dados do arquivo `knights-challenge.knights.json` para o banco de dados. Certifique-se de que o servidor esteja em execução antes de prosseguir.
 
-2. [Instruções para importar dados no banco de dados]
+2. Instruções para importar dados no banco de dados
+
+- Certifique-se de que o servidor e o banco de dados estejam em execução após a configuração inicial.
+
+- Crie o banco de dados necessário para o projeto.
+
+- Crie uma coleção chamada `knights` no banco de dados.
+
+- Copie o conteúdo do arquivo `knights-challenge.knights.json`.
+
+- Importe esse conteúdo na coleção `knights` recém-criada no banco de dados.
 
 ## Testes
 
