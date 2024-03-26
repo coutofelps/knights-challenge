@@ -1,0 +1,267 @@
+[{
+  "_id": {
+    "$oid": "66020e3806d5c4c235cb62bd"
+  },
+  "name": "Gandalf",
+  "nickname": "The Grey",
+  "birthday": "1954-11-12",
+  "weapons": [
+    {
+      "name": "sword",
+      "mod": 3,
+      "attr": "strength",
+      "equipped": true
+    },
+    {
+      "name": "club",
+      "mod": 2,
+      "attr": "strength",
+      "equipped": false
+    },
+    {
+      "name": "axe",
+      "mod": 4,
+      "attr": "strength",
+      "equipped": false
+    }
+  ],
+  "attributes": {
+    "strength": 17,
+    "dexterity": 11,
+    "constitution": 15,
+    "intelligence": 18,
+    "wisdom": 16,
+    "charisma": 14
+  },
+  "keyAttribute": "strength"
+},
+{
+  "_id": {
+    "$oid": "66020e3806d5c4c235cb62be"
+  },
+  "name": "Legolas",
+  "nickname": "Greenleaf",
+  "birthday": "1985-06-25",
+  "weapons": [
+    {
+      "name": "sword",
+      "mod": 3,
+      "attr": "strength",
+      "equipped": true
+    },
+    {
+      "name": "club",
+      "mod": 2,
+      "attr": "strength",
+      "equipped": false
+    },
+    {
+      "name": "axe",
+      "mod": 4,
+      "attr": "strength",
+      "equipped": false
+    }
+  ],
+  "attributes": {
+    "strength": 12,
+    "dexterity": 18,
+    "constitution": 14,
+    "intelligence": 11,
+    "wisdom": 16,
+    "charisma": 13
+  },
+  "keyAttribute": "strength"
+},
+{
+  "_id": {
+    "$oid": "66020e3806d5c4c235cb62c0"
+  },
+  "name": "Sir Galahad",
+  "nickname": "The Pure",
+  "birthday": {
+    "$date": "1980-08-25T00:00:00.000Z"
+  },
+  "weapons": [
+    {
+      "name": "sword",
+      "mod": 3,
+      "attr": "strength",
+      "equipped": true,
+      "_id": {
+        "$oid": "660217c6f09d575670cd6768"
+      }
+    },
+    {
+      "name": "shield",
+      "mod": 2,
+      "attr": "defense",
+      "equipped": false,
+      "_id": {
+        "$oid": "660217c6f09d575670cd6769"
+      }
+    }
+  ],
+  "attributes": {
+    "strength": 17,
+    "dexterity": 15,
+    "constitution": 16,
+    "intelligence": 12,
+    "wisdom": 14,
+    "charisma": 16
+  },
+  "keyAttribute": "strength"
+},
+{
+  "_id": {
+    "$oid": "66020e3806d5c4c235cb62c1"
+  },
+  "name": "Gimli",
+  "nickname": "Hero",
+  "birthday": "1970-03-27",
+  "weapons": [
+    {
+      "name": "sword",
+      "mod": 3,
+      "attr": "strength",
+      "equipped": true
+    },
+    {
+      "name": "club",
+      "mod": 2,
+      "attr": "strength",
+      "equipped": false
+    },
+    {
+      "name": "axe",
+      "mod": 4,
+      "attr": "strength",
+      "equipped": false
+    }
+  ],
+  "attributes": {
+    "strength": 16,
+    "dexterity": 10,
+    "constitution": 18,
+    "intelligence": 13,
+    "wisdom": 11,
+    "charisma": 12
+  },
+  "keyAttribute": "strength"
+},
+{
+  "_id": {
+    "$oid": "66020e3806d5c4c235cb62c2"
+  },
+  "name": "Bilbo",
+  "nickname": "Hero",
+  "birthday": "1968-08-31",
+  "weapons": [
+    {
+      "name": "sword",
+      "mod": 3,
+      "attr": "strength",
+      "equipped": true
+    },
+    {
+      "name": "club",
+      "mod": 2,
+      "attr": "strength",
+      "equipped": false
+    },
+    {
+      "name": "axe",
+      "mod": 4,
+      "attr": "strength",
+      "equipped": false
+    }
+  ],
+  "attributes": {
+    "strength": 13,
+    "dexterity": 11,
+    "constitution": 14,
+    "intelligence": 17,
+    "wisdom": 15,
+    "charisma": 12
+  },
+  "keyAttribute": "strength"
+},
+{
+  "_id": {
+    "$oid": "660214978c89d8cfa81d0311"
+  },
+  "name": "Sir Arthur",
+  "nickname": "The Brave",
+  "birthday": {
+    "$date": "1970-05-20T00:00:00.000Z"
+  },
+  "weapons": [
+    {
+      "name": "sword",
+      "mod": 3,
+      "attr": "strength",
+      "equipped": true,
+      "_id": {
+        "$oid": "660214978c89d8cfa81d0312"
+      }
+    },
+    {
+      "name": "shield",
+      "mod": 2,
+      "attr": "defense",
+      "equipped": false,
+      "_id": {
+        "$oid": "660214978c89d8cfa81d0313"
+      }
+    }
+  ],
+  "attributes": {
+    "strength": 18,
+    "dexterity": 14,
+    "constitution": 16,
+    "intelligence": 12,
+    "wisdom": 13,
+    "charisma": 15
+  },
+  "keyAttribute": "strength",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6602164689644860da8c1c36"
+  },
+  "name": "Sir Arthur",
+  "nickname": "The Brave",
+  "birthday": {
+    "$date": "1970-05-20T00:00:00.000Z"
+  },
+  "weapons": [
+    {
+      "name": "sword",
+      "mod": 3,
+      "attr": "strength",
+      "equipped": true,
+      "_id": {
+        "$oid": "6602164689644860da8c1c37"
+      }
+    },
+    {
+      "name": "shield",
+      "mod": 2,
+      "attr": "defense",
+      "equipped": false,
+      "_id": {
+        "$oid": "6602164689644860da8c1c38"
+      }
+    }
+  ],
+  "attributes": {
+    "strength": 18,
+    "dexterity": 14,
+    "constitution": 16,
+    "intelligence": 12,
+    "wisdom": 13,
+    "charisma": 15
+  },
+  "keyAttribute": "strength",
+  "__v": 0
+}]

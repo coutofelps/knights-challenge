@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "4d868f7d-6758-448e-82d0-34491680f7fa",
+		"name": "Knight Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3054390"
+	},
+	"item": [
+		{
+			"name": "/knights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/knights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"knights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/knights?heroes=true",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/knights?heroes=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"knights"
+					],
+					"query": [
+						{
+							"key": "heroes",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/kights/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/knights/66020de606d5c4c235cb62bb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"knights",
+						"66020de606d5c4c235cb62bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/knights",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sir Arthur\",\r\n    \"nickname\": \"The Brave\",\r\n    \"birthday\": \"1970-05-20\",\r\n    \"weapons\": [\r\n        {\r\n            \"name\": \"sword\",\r\n            \"mod\": 3,\r\n            \"attr\": \"strength\",\r\n            \"equipped\": true\r\n        },\r\n        {\r\n            \"name\": \"shield\",\r\n            \"mod\": 2,\r\n            \"attr\": \"defense\",\r\n            \"equipped\": false\r\n        }\r\n    ],\r\n    \"attributes\": {\r\n        \"strength\": 18,\r\n        \"dexterity\": 14,\r\n        \"constitution\": 16,\r\n        \"intelligence\": 12,\r\n        \"wisdom\": 13,\r\n        \"charisma\": 15\r\n    },\r\n    \"keyAttribute\": \"strength\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/knights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"knights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/knights",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sir Galahad\",\r\n    \"nickname\": \"The Pure\",\r\n    \"birthday\": \"1980-08-25\",\r\n    \"weapons\": [\r\n        {\r\n            \"name\": \"sword\",\r\n            \"mod\": 3,\r\n            \"attr\": \"strength\",\r\n            \"equipped\": true\r\n        },\r\n        {\r\n            \"name\": \"shield\",\r\n            \"mod\": 2,\r\n            \"attr\": \"defense\",\r\n            \"equipped\": false\r\n        }\r\n    ],\r\n    \"attributes\": {\r\n        \"strength\": 17,\r\n        \"dexterity\": 15,\r\n        \"constitution\": 16,\r\n        \"intelligence\": 12,\r\n        \"wisdom\": 14,\r\n        \"charisma\": 16\r\n    },\r\n    \"keyAttribute\": \"strength\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/knights/66020e3806d5c4c235cb62c0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"knights",
+						"66020e3806d5c4c235cb62c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/knights",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/knights/66020e3806d5c4c235cb62bf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"knights",
+						"66020e3806d5c4c235cb62bf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
