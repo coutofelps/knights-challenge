@@ -18,7 +18,8 @@ const knightSchema = new mongoose.Schema({
         wisdom: Number,
         charisma: Number
     },
-    keyAttribute: String
+    keyAttribute: String,
+    attack: Number
 })
 
 const Knight = mongoose.model('Knight', knightSchema)
