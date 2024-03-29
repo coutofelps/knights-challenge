@@ -18,13 +18,13 @@ services:
 
   client:
     container_name: KC_CLIENT_CONTAINER
-    image: node:latest
-    working_dir: /app
+    build: './client'
     volumes:
-      - ./client:/app
+      - ./client/:/app
+    environment:
+      VUE_ENV: development
     ports:
       - '8080:8080'
-    command: npm run serve
 
   db:
     image: 'mongo'
