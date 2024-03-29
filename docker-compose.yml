@@ -16,6 +16,16 @@ services:
     ports:
       - '9000:9000'
 
+  client:
+    container_name: KC_CLIENT_CONTAINER
+    image: node:latest
+    working_dir: /app
+    volumes:
+      - ./client:/app
+    ports:
+      - '8080:8080'
+    command: npm run serve
+
   db:
     image: 'mongo'
     container_name: KC_MONGODB_CONTAINER
