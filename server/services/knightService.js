@@ -28,6 +28,15 @@ const knightService = {
         return attack
     },
 
+    calculateExperience: function(knight) {
+        const { birthday } = knight
+        const age = new Date().getFullYear() - new Date(birthday).getFullYear()
+
+        const experience = age >= 7 ? Math.floor((age - 7) * Math.pow(22, 1.45)) : 0
+
+        return experience
+    },
+
     getAllKnights: async function(heroesParam) {
         try {
             let knights
@@ -40,6 +49,7 @@ const knightService = {
 
             knights.forEach(knight => {
                 knight.attack = this.calculateAttack(knight)
+                knight.experience = this.calculateExperience(knight)
             })
 
             return knights
@@ -54,6 +64,7 @@ const knightService = {
 
             if (knight) {
                 knight.attack = this.calculateAttack(knight)
+                knight.experience = this.calculateExperience(knight)
 
                 return knight
             } else {

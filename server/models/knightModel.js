@@ -19,7 +19,8 @@ const knightSchema = new mongoose.Schema({
         charisma: Number
     },
     keyAttribute: String,
-    attack: Number
+    attack: Number,
+    experience: Number
 })
 
 const Knight = mongoose.model('Knight', knightSchema)
