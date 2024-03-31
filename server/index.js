@@ -1,8 +1,11 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const knightRoutes = require('./routes/knightRoutes')
-
+const cors = require('cors')
 const app = express()
+
+// Habilitando CORS
+app.use(cors())
 
 // Configurações
 app.use(express.json())

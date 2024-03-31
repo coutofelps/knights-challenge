@@ -1,19 +1,31 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import KnightList from './views/components/KnightList.vue'
+import KnightDetails from './views/components/KnightDetails.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import('./views/App.vue')
+    name: 'KnightList',
+    component: KnightList,
   },
+  {
+    path: '/knight/add',
+    name: 'KnightAdd',
+    component: KnightDetails,
+  },
+  {
+    path: '/knight/:id',
+    name: 'KnightDetails',
+    component: KnightDetails,
+  }
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: '',
   routes
 })
 
