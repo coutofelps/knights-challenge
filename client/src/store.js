@@ -20,6 +20,10 @@ export default new Vuex.Store({
 
         deleteKnight(state, knightId) {
             state.knights = state.knights.filter(knight => knight._id !== knightId)
+        },
+
+        setCurrentKnight(state, knight) {
+            state.currentKnight = knight
         }
     },
     actions: {
@@ -41,10 +45,14 @@ export default new Vuex.Store({
         },
         async fetchKnightById({ commit }, knightId) {
             try {
-                const response = await fetch(`${URL_API}/get-testing/${knightId}`)
+                const response = await fetch(`${URL_API}/knights/${knightId}`)
                 const data = await response.json()
 
-                commit('setKnights', data ? [data] : [])
+                if (data) {
+                    commit('setCurrentKnight', data)
+                } else {
+                    console.error(`Knight com o ID ${knightId} não encontrado.`)
+                }
             } catch (error) {
                 console.error(`Erro ao buscar o knight com o ID ${knightId}:`, error)
             }
@@ -70,8 +78,32 @@ export default new Vuex.Store({
                 console.error('Erro ao criar cavaleiro:', error.message)
             }
         },
-        async updateKnight({ dispatch }, { knightId, knightData }) {
-            // Implementação do método updateKnight
+        async updateKnight({ commit, state }, { knightId, knightData }) {
+            try {
+                const response = await fetch(`${URL_API}/knights/${knightId}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(knightData)
+                })
+
+                if (response.ok) {
+                    const updatedKnights = state.knights.map(knight => {
+                        if (knight._id === knightId) {
+                            return { ...knight, ...knightData }
+                        }
+
+                        return knight
+                    })
+
+                    commit('setKnights', updatedKnights)
+                } else {
+                    throw new Error('Erro ao atualizar cavaleiro')
+                }
+            } catch (error) {
+                console.error('Erro ao atualizar cavaleiro:', error.message)
+            }
         },
         async deleteKnight({ commit }, knightId) {
             try {

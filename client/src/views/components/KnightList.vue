@@ -45,9 +45,9 @@
             </ul>
           </td>
           <td>
-            <button class="btn btn-warning">
+            <router-link :to="{ name: 'KnightEdit', params: { id: knight._id }}" class="btn btn-warning">
               <i class="fas fa-edit"></i> Editar
-            </button>
+            </router-link>
             <button class="btn btn-danger" @click="deleteKnight(knight._id)">
               <i class="fas fa-trash-alt"></i> Apagar
             </button>

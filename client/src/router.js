@@ -17,8 +17,8 @@ const routes = [
     component: KnightDetails,
   },
   {
-    path: '/knight/:id',
-    name: 'KnightDetails',
+    path: '/knight/edit/:id',
+    name: 'KnightEdit',
     component: KnightDetails,
   }
 ]
